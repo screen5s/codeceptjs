@@ -1,0 +1,26 @@
+{
+  "name": "wisebits_test",
+  "version": "1.0.0",
+  "description": "Test automation with codeceptjs.",
+  "main": "index.js",
+  "scripts": {
+    "test_single": "set NODE_ENV=test&& codeceptjs run --steps",
+    "test": "set NODE_ENV=test&& codeceptjs run-workers 5",
+    "generate_report": "allure serve reports/allure"
+  },
+  "keywords": [
+    "nodejs",
+    "webdriverio",
+    "codeceptjs"
+  ],
+  "author": "R.Gaynetdinov",
+  "dependencies": {
+    "allure-commandline": "^2.13.0",
+    "assert": "^2.0.0",
+    "axios": "^0.18.1",
+    "codeceptjs": "2.3.4",
+    "config": "^3.3.2",
+    "qs": "^6.9.4",
+    "webdriverio": "5.23.0"
+  }
+}
